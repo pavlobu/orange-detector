@@ -99,7 +99,7 @@ def find_orange(image):
     #birghtness of a color is hue
     # 170-180 hue
     min_red2 = np.array([155, 50, 50])
-    max_red2 = np.array([175, 256, 256])
+    max_red2 = np.array([175, 255, 255])
     mask2 = cv2.inRange(image_blur_hsv, min_red2, max_red2)
 
     #looking for what is in both ranges
